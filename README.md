@@ -86,19 +86,12 @@ They cover the movie, rating, genre and director cleaning functions, including t
 ## Data model
 
 | Table | Description | Primary key |
-
 |---|---|---|
-
 | `movies` | One row per movie: title, release year, decade, IMDb ID, and OMDb details | `movie_id` |
-
 | `genres` | One row per genre name | `genre_id` |
-
 | `movie_genres` | Links movies and genres (many-to-many) | `movie_id` + `genre_id` |
-
 | `ratings` | One row per user rating | `user_id` + `movie_id` |
-
 | `directors` | One row per director name | `director_id` |
-
 | `movie_directors` | Links movies and directors (many-to-many) | `movie_id` + `director_id` |
 
 Design choices:
